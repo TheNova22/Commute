@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "729622908898",
+    "project_id": "wackiest2021",
+    "storage_bucket": "wackiest2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729622908898:android:84fb5918d8a9aa646773bb",
+        "android_client_info": {
+          "package_name": "com.cantin.whackiest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729622908898-odoorb76jaiggni9smsc38j2dl9olvhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLtkhpRVet0QWRBIaV7QgfOYieBS6Di-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729622908898-odoorb76jaiggni9smsc38j2dl9olvhk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "729622908898-72bkgk7jr6ljknhkbbejbffril064kfq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cantin.whackiest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
