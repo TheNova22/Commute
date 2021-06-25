@@ -1,5 +1,6 @@
 import 'dart:math' as Math;
 
+// Test
 String userIdGlobal = 'none';
 String userCityGlobal = 'none';
 bool globalUserIsVaccinated = true;
