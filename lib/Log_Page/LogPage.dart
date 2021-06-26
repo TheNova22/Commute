@@ -2,6 +2,7 @@ import 'package:cantin/globals.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class LogPage extends StatelessWidget {
   const LogPage({Key key}) : super(key: key);
@@ -57,6 +58,7 @@ class logTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final date = DateFormat.yMd().add_jm().format(time);
     return FutureBuilder(
       future: FirebaseFirestore.instance.collection('users').doc(uid).get(),
       builder: (context, snapshot) {
@@ -75,11 +77,8 @@ class logTile extends StatelessWidget {
               minVerticalPadding: 10,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10))),
-              leading: Padding(
-                padding: const EdgeInsets.only(top: 3.0),
-                child: Text(time.toString()),
-              ),
               title: Text(data['userName']),
+              subtitle: Text(date.toString()),
               trailing: Padding(
                 padding: const EdgeInsets.only(right: 3.0),
                 child: Text(
